@@ -42,16 +42,6 @@ set_global_assignment -name TOP_LEVEL_ENTITY cpu_top_tb
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:08:07  JANUARY 30, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
-set_global_assignment -name VERILOG_FILE cpu_top.v
-set_global_assignment -name VERILOG_FILE Simulations/register_tb.v
-set_global_assignment -name VERILOG_FILE Simulations/register_file_tb.v
-set_global_assignment -name VERILOG_FILE Simulations/cpu_top_tb.v
-set_global_assignment -name VERILOG_FILE Registers/special_registers.v
-set_global_assignment -name VERILOG_FILE Registers/register_file.v
-set_global_assignment -name VERILOG_FILE Registers/register.v
-set_global_assignment -name VERILOG_FILE Registers/pc.v
-set_global_assignment -name VERILOG_FILE Registers/ir.v
-set_global_assignment -name VERILOG_FILE Bus/bus.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -71,4 +61,16 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id cpu_top_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME cpu_top_tb -section_id cpu_top_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ms" -section_id cpu_top_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE Simulations/cpu_top_tb.v -section_id cpu_top_tb
+set_global_assignment -name VERILOG_FILE Registers/register_64.v
+set_global_assignment -name VERILOG_FILE Registers/register_32.v
+set_global_assignment -name VERILOG_FILE cpu_top.v
+set_global_assignment -name VERILOG_FILE Simulations/register_tb.v
+set_global_assignment -name VERILOG_FILE Simulations/register_file_tb.v
+set_global_assignment -name VERILOG_FILE Simulations/cpu_top_tb.v
+set_global_assignment -name VERILOG_FILE Registers/special_registers.v
+set_global_assignment -name VERILOG_FILE Registers/register_file.v
+set_global_assignment -name VERILOG_FILE Registers/register.v
+set_global_assignment -name VERILOG_FILE Registers/pc.v
+set_global_assignment -name VERILOG_FILE Registers/ir.v
+set_global_assignment -name VERILOG_FILE Bus/bus.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

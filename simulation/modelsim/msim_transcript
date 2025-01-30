@@ -10,29 +10,49 @@
 # Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:41 on Jan 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v 
+# -- Compiling module register_64
+# 
+# Top level modules:
+# 	register_64
+# End time: 12:28:41 on Jan 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:28:41 on Jan 30,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v 
+# -- Compiling module register_32
+# 
+# Top level modules:
+# 	register_32
+# End time: 12:28:41 on Jan 30,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:41 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v 
 # -- Compiling module cpu_top
 # 
 # Top level modules:
 # 	cpu_top
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:41 on Jan 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:41 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v 
 # -- Compiling module cpu_top_tb
 # 
 # Top level modules:
 # 	cpu_top_tb
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:41 on Jan 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/special_registers.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:41 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/special_registers.v 
 # -- Compiling module pc_register
 # -- Compiling module ir_register
@@ -40,60 +60,78 @@
 # Top level modules:
 # 	pc_register
 # 	ir_register
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:41 on Jan 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:41 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_file.v 
 # -- Compiling module register_file
 # 
 # Top level modules:
 # 	register_file
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:41 on Jan 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:41 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register.v 
 # -- Compiling module register
 # 
 # Top level modules:
 # 	register
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:42 on Jan 30,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Bus {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Bus/bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:42 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Bus" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Bus/bus.v 
 # -- Compiling module bus
 # 
 # Top level modules:
 # 	bus
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:42 on Jan 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:35:25 on Jan 30,2025
+# Start time: 12:28:42 on Jan 30,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations" C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v 
 # -- Compiling module cpu_top_tb
 # 
 # Top level modules:
 # 	cpu_top_tb
-# End time: 11:35:25 on Jan 30,2025, Elapsed time: 0:00:00
+# End time: 12:28:42 on Jan 30,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_top_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" cpu_top_tb 
-# Start time: 11:35:26 on Jan 30,2025
+# Start time: 12:28:42 on Jan 30,2025
 # Loading work.cpu_top_tb
 # Loading work.cpu_top
 # Loading work.register_file
 # Loading work.pc_register
 # Loading work.register
 # Loading work.ir_register
+# Loading work.register_64
+# Loading work.register_32
 # Loading work.bus
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(85): [PCDPC] - Port size (64) does not match connection size (1) for port 'D'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/Z File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(85): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q_low'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/Z File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(85): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q_high'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/Z File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(87): [PCDPC] - Port size (32) does not match connection size (1) for port 'D'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/HI File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(87): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/HI File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(88): [PCDPC] - Port size (32) does not match connection size (1) for port 'D'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/LO File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(88): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/LO File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(92): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/MDR File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
 # 
 # add wave *
 # view structure
@@ -104,11 +142,39 @@
 # Starting Testbench for cpu_top (Bus + Registers)
 # Bus Output (R0): cafebabe, Expected: DEADBEEF
 # Bus Output (PC): cafebabe, Expected: 12345678
-# Bus Output (IR): cafebabe, Expected: CAFEBABE
+# Bus Output (IR): 00000000, Expected: CAFEBABE
 # Bus Output (R1): 00000000, Expected: FACECAFE
 # Test Completed
-# ** Note: $stop    : C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v(74)
-#    Time: 200 ns  Iteration: 0  Instance: /cpu_top_tb
-# Break in Module cpu_top_tb at C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v line 74
-# End time: 11:43:53 on Jan 30,2025, Elapsed time: 0:08:27
-# Errors: 0, Warnings: 0
+# ** Note: $stop    : C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v(79)
+#    Time: 220 ns  Iteration: 0  Instance: /cpu_top_tb
+# Break in Module cpu_top_tb at C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v line 79
+add wave -position end  sim:/cpu_top_tb/uut/MDR/Q
+restart
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(85): [PCDPC] - Port size (64) does not match connection size (1) for port 'D'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/Z File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(85): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q_low'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/Z File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(85): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q_high'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/Z File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(87): [PCDPC] - Port size (32) does not match connection size (1) for port 'D'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/HI File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(87): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/HI File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(88): [PCDPC] - Port size (32) does not match connection size (1) for port 'D'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/LO File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(88): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/LO File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+# ** Warning: (vsim-3015) C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v(92): [PCDPC] - Port size (32) does not match connection size (1) for port 'Q'. The port definition is at: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_top_tb/uut/MDR File: C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v
+run 500ms
+# Starting Testbench for cpu_top (Bus + Registers)
+# Bus Output (R0): cafebabe, Expected: DEADBEEF
+# Bus Output (PC): cafebabe, Expected: 12345678
+# Bus Output (IR): 00000000, Expected: CAFEBABE
+# Bus Output (R1): 00000000, Expected: FACECAFE
+# Test Completed
+# ** Note: $stop    : C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v(79)
+#    Time: 220 ns  Iteration: 0  Instance: /cpu_top_tb
+# Break in Module cpu_top_tb at C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v line 79
+# End time: 12:30:29 on Jan 30,2025, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 16

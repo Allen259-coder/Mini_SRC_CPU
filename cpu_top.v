@@ -6,7 +6,9 @@ module cpu_top (
     input wire [3:0] addr_out,
     input wire [31:0] data_in,
     input wire [4:0] reg_out_select,
-    output wire [31:0] bus_out
+    output wire [31:0] bus_out,
+	 
+	 input wire e_MDR
 );
 
     // Internal Signals
@@ -77,6 +79,17 @@ module cpu_top (
         .q(),
         .bus_out(ir_bus_out)
     );
+	
+	//ALU and related registers
+	//register_32 Y(clear, clock, e_Y, BusData, data_to_bus);	
+	register_64 Z(clear, clock, e_Z, BusData, BusMuxIn_Zlow, BusMuxIn_Zhigh);
+	
+	register_32 HI(clear, clock, e_HI, BusData, BusMuxIn_HI);
+	register_32 LO(clear, clock, e_LO, BusData, BusMuxIn_LO);
+
+	//memory "gateway"
+	//register_32 MAR(clear, clock, e_MAR, BusData, );
+	register_32 MDR(clk, reset, e_MDR, bus_out, BusMuxIn_MDR);
 
     // Instantiate Bus
     bus data_bus (

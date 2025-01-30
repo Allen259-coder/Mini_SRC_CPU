@@ -13,6 +13,8 @@ module cpu_top_tb;
 
     // Outputs
     wire [31:0] bus_out;    // Output from the bus
+	 
+	 reg MDR_load;
 
     // Instantiate Top-Level Module
     cpu_top uut (
@@ -23,7 +25,8 @@ module cpu_top_tb;
         .addr_out(addr_out),
         .data_in(data_in),
         .reg_out_select(reg_out_select),
-        .bus_out(bus_out)
+        .bus_out(bus_out),
+		  .e_MDR(MDR_load)
     );
 
     // Clock Generation (50 MHz)
@@ -35,7 +38,7 @@ module cpu_top_tb;
         $display("Starting Testbench for cpu_top (Bus + Registers)");
 
         // **Step 1: Reset the System**
-        reset = 1; load = 0; addr_in = 4'b0000; addr_out = 4'b0000; data_in = 32'b0; reg_out_select = 5'b00000;
+        reset = 1; load = 0; addr_in = 4'b0000; addr_out = 4'b0000; data_in = 32'b0; reg_out_select = 5'b00000; MDR_load = 0;
         #20 reset = 0; // Deactivate reset
 
         // **Step 2: Write to Registers**
@@ -57,8 +60,10 @@ module cpu_top_tb;
         reg_out_select = 5'b10100; #20;
         $display("Bus Output (PC): %h, Expected: 12345678", bus_out);
 
+		  reg_out_select=5'b00000; MDR_load = 1; #20; MDR_load = 0;
+		  
         // Select IR
-        reg_out_select = 5'b10110; #20;
+        reg_out_select = 5'b10101; #20;
         $display("Bus Output (IR): %h, Expected: CAFEBABE", bus_out);
 
         // **Step 4: Test Another Register**

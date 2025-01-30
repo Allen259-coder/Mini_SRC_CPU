@@ -33,7 +33,6 @@ module bus (
             5'b10011: BusMuxOut <= BusMuxIn_Zlow;
             5'b10100: BusMuxOut <= BusMuxIn_PC;
             5'b10101: BusMuxOut <= BusMuxIn_MDR;
-            5'b10110: BusMuxOut <= BusMuxIn_IR;
             default: BusMuxOut <= 32'bz;
         endcase
     end

@@ -5,6 +5,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_64.v}
+vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/register_32.v}
 vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/cpu_top.v}
 vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Simulations/cpu_top_tb.v}
 vlog -vlog01compat -work work +incdir+C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers {C:/Users/19ajl16/Desktop/Mini_SRC_CPU/Registers/special_registers.v}
