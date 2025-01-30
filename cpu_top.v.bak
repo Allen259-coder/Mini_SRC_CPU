@@ -33,7 +33,7 @@ module cpu_top (
     wire [31:0] reg_file_bus_inputs [15:0]; // Array to hold outputs for R0-R15
     genvar i;
     generate
-        for (i = 0; i < 16; i = i + 1) begin : genBus
+        for (i = 0; i < 16; i = i + 1) begin
             assign reg_file_bus_inputs[i] = (addr_out == i) ? data_out : 32'bz;
         end
     endgenerate

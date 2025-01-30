@@ -65,8 +65,6 @@ module cpu_top_tb;
         // Write 0xFACECAFE to R1 and read it
         addr_in = 4'b0001; data_in = 32'hFACECAFE; load = 1; #20; load = 0;
         reg_out_select = 5'b00001; addr_out = 4'b0001; #20;
-		  
-		  reset = 1; #20;
         $display("Bus Output (R1): %h, Expected: FACECAFE", bus_out);
 
         // Finish simulation
