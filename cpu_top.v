@@ -14,6 +14,7 @@ module cpu_top (
 );
 
     // Internal signals
+    wire [31:0] mar_out;          // MAR output
     wire [31:0] data_out;         // Output from register_file
     wire [31:0] pc_bus_out;       // PC -> bus
     wire [31:0] ir_bus_out;       // IR -> bus
@@ -38,10 +39,9 @@ module cpu_top (
         .data_out  (data_out)
     );
 
-    // For illustration, we connect each of the 16 registers to the bus MUX
-    // Only the one addressed by `addr_out` has valid data_out; others can be z or 0.
+  
     // A simpler approach is to store all 16 regs in an array and do a big multiplexer,
-    // but here we show a conceptual approach.
+    // as w did befire using genvar, but doing this way for clarity
 
     // You can do direct assignments, or a generate block. For simplicity:
     assign BusMuxIn_R0  = (addr_out == 0) ? data_out : 32'b0;
@@ -99,6 +99,15 @@ module cpu_top (
         .mdr_out    (mdr_out)
     );
 
+    // Instantiate MAR
+    mar mar_unit (
+        .clk     (clk),
+        .clr     (reset),
+        .mar_in  (load),       // Use the load signal for MAR write
+        .bus_in  (bus_out),    // MAR loads address from the bus
+        .mar_out (mar_out)
+    );
+
     //=========================================================================
     // 4 System Bus
     //    - Multiplexer that selects which register’s output drives bus_out
@@ -127,6 +136,7 @@ module cpu_top (
         .BusMuxIn_PC   (pc_bus_out),
         .BusMuxIn_IR   (ir_bus_out),
         .BusMuxIn_MDR  (mdr_out),
+        .BusMuxIn_MAR  (mar_out),
         .reg_out_select(reg_out_select),
         .BusMuxOut     (bus_out)
     );

@@ -6,7 +6,7 @@ module bus (
                        BusMuxIn_R8,  BusMuxIn_R9,  BusMuxIn_R10, BusMuxIn_R11,
                        BusMuxIn_R12, BusMuxIn_R13, BusMuxIn_R14, BusMuxIn_R15,
                        BusMuxIn_HI,  BusMuxIn_LO,  BusMuxIn_Zhigh, BusMuxIn_Zlow,
-                       BusMuxIn_PC,  BusMuxIn_IR,  BusMuxIn_MDR,
+                       BusMuxIn_PC,  BusMuxIn_IR,  BusMuxIn_MDR, BusMuxIn_MAR,
     input wire [4:0]  reg_out_select,
     output reg [31:0] BusMuxOut
 );
@@ -36,6 +36,7 @@ module bus (
             5'b10100: BusMuxOut = BusMuxIn_PC;
             5'b10101: BusMuxOut = BusMuxIn_MDR; // MDR selection
             5'b10110: BusMuxOut = BusMuxIn_IR;
+            5'b10111: BusMuxOut = BusMuxIn_MAR;
             default:  BusMuxOut = 32'b0;
         endcase
     end
